@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:c="http://www.springframework.org/schema/c"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+
+
+
+
+<bean id="traveller" class="com.niit.di.Travaller">
+<property name="kmTravelled" value="10"></property>
+<property name="name" value="John"></property>
+<property name="vehicle" ref="motorBike"></property>
+</bean>
+
+<bean id="car" class="com.niit.di.Car">
+<property name="regNo" value="1345"></property>
+<property name="costPerKm" value="120.0"></property>
+</bean>
+
+
+<bean id="motorBike" class="com.niit.di.Moterbike">
+<property name="costPerKm" value="100.00"></property>
+</bean>
+
+<!--  Engine engineObj=new Engine(); -->
+<!-- WelcomeMessage welcomeMessageBean=new com.niit.welcome.WelcomeMessage() -->
+</beans>
